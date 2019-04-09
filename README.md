@@ -1,6 +1,6 @@
-#Responsive Website for Clothing Retailer
+# Responsive Website for Clothing Retailer
 
-##User Stories
+## User Stories
 
 
 ```
