@@ -20,5 +20,11 @@ describe("Individual Product", () => {
     expect(product.quantity).toEqual(5)
   })
 
+  it("Can tell whether a product is out of stock", () => {
+    expect(product.outOfStock()).toBe(false)
+  })
+
+
+
 
 })

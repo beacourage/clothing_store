@@ -6,5 +6,8 @@ class IndividualProduct {
     this.quantity = parseInt(quantityInStock)
   }
 
+  outOfStock(){
+    return (this.quantity == 0)
+  }
 
 }
