@@ -18,4 +18,16 @@ describe("Cart", () => {
     expect(shoppingCart.products[0]).toEqual("Skirt")
   })
 
+  it("Can remove a product from the shopping cart", () => {
+    shoppingCart.addProduct("Skirt")
+    shoppingCart.removeProduct("Skirt")
+    expect(shoppingCart.products.length).toEqual(0)
+  })
+
+  it("The products array has the specific product removed", () => {
+    shoppingCart.products = ["Top","Skirt","Trousers", "Shoes"]
+    shoppingCart.removeProduct("Trousers")
+    expect(shoppingCart.products).toEqual(["Top","Skirt","Shoes"])
+  })
+
 })

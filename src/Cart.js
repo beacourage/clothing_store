@@ -7,5 +7,10 @@ class Cart {
     this.products.push(product)
   }
 
+  removeProduct(product) {
+    var position = this.products.lastIndexOf(product)
+   	this.products.splice(position,1)
+  }
+
 
 }
