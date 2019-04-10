@@ -2,7 +2,10 @@ describe("Cart", () => {
 
   beforeEach(() => {
   		shoppingCart = new Cart
+      product1 = new IndividualProduct("Almond Toe Court Shoes, Patent Black","Women’s Footwear","£99.00","5")
+      product2 = new IndividualProduct("Flip Flops, Red","Men’s Footwear","£19.00","6")
   	})
+
 
   it("The shopping cart is initially empty", () => {
     expect(shoppingCart.products.length).toEqual(0)
@@ -29,5 +32,12 @@ describe("Cart", () => {
     shoppingCart.removeProduct("Trousers")
     expect(shoppingCart.products).toEqual(["Top","Skirt","Shoes"])
   })
+
+  it("Can view the total price of products in shopping cart", () => {
+    shoppingCart.addProduct(product1)
+    shoppingCart.addProduct(product2)
+    expect(shoppingCart.totalPrice()).toEqual(118)
+  })
+
 
 })

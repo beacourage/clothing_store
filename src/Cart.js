@@ -12,11 +12,11 @@ class Cart {
    	this.products.splice(position,1)
   }
 
-  totalPrice(product) {
-
-  // want the total price of products in my cart
-
-  }
+  totalPrice() {
+    return this.products.reduce((acc, product) => {
+      return acc + product.price
+    }, 0)
+    }
 
 
 }
