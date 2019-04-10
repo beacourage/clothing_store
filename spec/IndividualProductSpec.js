@@ -12,9 +12,13 @@ describe("Individual Product", () => {
     expect(product.category).toEqual("Women’s Footwear")
   })
 
+  it("Initialized product has the correct price", () => {
+    expect(product.price).toEqual(99)
+  })
+
   it("Initialized product has the correct quantity", () => {
     expect(product.quantity).toEqual(5)
   })
-  
+
 
 })
