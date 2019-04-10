@@ -10,4 +10,10 @@ class IndividualProduct {
     return (this.quantity == 0)
   }
 
+  inStock(){
+    return ( this.quantity > 0)
+  }
+
+
+
 }
