@@ -3,5 +3,9 @@ class Cart {
     this.products = []
   }
 
+  addProduct(product) {
+    this.products.push(product)
+  }
+
 
 }
