@@ -14,5 +14,17 @@ class IndividualProduct {
     return ( this.quantity > 0)
   }
 
+  removeProduct() {
+    if (this.inStock()) {
+      this.quantity -= 1;
+      return true
+    } else {
+      return false
+    }
+  }
+
+  addProduct() {
+    this.quantity += 1;
+  }
 
 }

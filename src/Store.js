@@ -1,7 +1,7 @@
 class Store{
   constructor(){
     this.shoppingCart = new Cart
-    this.products = this.allProducts()
+    this.allOfproducts = this.allProducts()
   }
 
   allProducts() {
@@ -26,6 +26,26 @@ class Store{
      array.push(new IndividualProduct(product[0], product[1], product[2],product[3]))
    })
     return array
+  }
+
+  findIndex(productname){
+    var results;
+    this.allOfproducts.forEach((product, index) => {
+      if(product.name === productname) {
+        results = index
+        return false;
+      }
+    })
+    return results
+  }
+
+  addBasket(product) {
+    var position = this.findIndex(product.name)
+    if (this.allOfproducts[position].removeProduct()) {
+      this.shoppingCart.addProduct(product)
     }
+  }
+
+
 
 }
