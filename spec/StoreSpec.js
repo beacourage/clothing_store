@@ -13,6 +13,10 @@ describe("Store", () => {
     expect(store.products[7].name).toEqual("Fine Stripe Short Sleeve Shirt, Grey")
   })
 
+  it("Can find the price of a particular product in the store", () => {
+    expect(store.products[9].price).toEqual(75.00)
+  })
+
 
 
 
