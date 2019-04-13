@@ -18,15 +18,30 @@ describe("Store", () => {
   })
 
 
-	it('Can add a product to the basket', () => {
+	it('Can add a products to the basket', () => {
   	store.addBasket(store.allOfproducts[0])
-  	expect(store.shoppingCart.totalPrice()).toEqual(99.00)
+    store.addBasket(store.allOfproducts[1])
+  	expect(store.shoppingCart.totalPrice()).toEqual(141.00)
   	})
 
   it('Adding product to the basket decreases its quantity', () => {
     store.addBasket(store.allOfproducts[0])
     expect(store.allOfproducts[0].quantity).toEqual(4)
   })
+
+  it('Unable to put out of stock products in the basket', () => {
+  store.addBasket(store.allOfproducts[4]);
+  expect(store.shoppingCart.totalPrice()).toEqual(0);
+  expect(store.allOfproducts[4].quantity).toEqual(0);
+});
+
+// it('removes a product from the basket', function() {
+//   shop.addToBasket(product1);
+//   shop.addToBasket(product1);
+//   shop.removeFromBasket(product1.name);
+//   expect(shop.basket.totalValue()).toEqual(19);
+//   expect(shop.inventory[3].quantity).toEqual(5);
+// });
 
 
 })
