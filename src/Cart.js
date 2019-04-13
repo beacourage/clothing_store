@@ -18,5 +18,9 @@ class Cart {
     }, 0)
     }
 
+  itemCount() {
+    return this.products.length
+  }
+
 
 }

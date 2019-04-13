@@ -2,15 +2,34 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="lib/bootstrap.min.js"></script>
 </head>
 <body bgcolor="FFC0CB" >
   <center>
 <h1> C L O T H E S </h1>
 
+
+  <article class="container">
+		<section id="product-section" class="col-xs-9">
+		<ul id="inventory-list" class="container-fluid row"></ul>
+		</section>
+
+		<aside id="basket" class="col-xs-3">
+      <h2>Basket</h2>
+      			<ul id="basket-list"></ul>
+      			<span id='basket_count'>0</span> items, £<span id='basket_value'>0.00</span>
+		</aside>
+	</article>
 </center>
 </body>
   <script type="text/javascript" src="src/Cart.js"></script>
   <script type="text/javascript" src="src/IndividualProduct.js"></script>
-    <script type="text/javascript" src="src/Store.js"></script>
+  <script type="text/javascript" src="src/Store.js"></script>
+ <script type="text/javascript" src="src/Scripts.js"></script>
+
 </html>
