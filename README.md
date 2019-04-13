@@ -36,3 +36,11 @@ As a user,
 So that I only buy items that are in stock,
 I am unable to put Out of Stock products in the shopping cart.
 ```
+## Technologies used
+
+Tech | Description
+------------- | -------------
+[Javascript](https://www.javascript.com/) | Main language used
+[Jasmine](https://jasmine.github.io) | Javascript testing framework
+[Github pages](https://pages.github.com/) | Deployment
+[Google draw](https://quickdraw.withgoogle.com/) | Drawing of assets
