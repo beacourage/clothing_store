@@ -39,14 +39,14 @@ class Store{
     return results
   }
 
-  addBasket(product) {
+  addCart(product) {
     var position = this.findIndex(product.name)
     if (this.allOfproducts[position].removeProduct()) {
       this.shoppingCart.addProduct(product)
     }
   }
 
-  removeBasket(product)  {
+  removeCart(product)  {
     var position = this.findIndex(product)
     this.shoppingCart.removeProduct(this.allOfproducts[position])
     this.allOfproducts[position].addProduct()

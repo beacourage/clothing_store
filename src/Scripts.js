@@ -6,33 +6,33 @@ $(document).ready(function() {
 	$('#inventory-list').on('click', 'a.add-to-basket', function() {
 		var position = $(this).data('pick');
 
-		store.addBasket(store.allOfproducts[position]);
+		store.addCart(store.allOfproducts[position]);
 		refresh(store);
 	});
 
 	$('#basket-list').on('click', 'a.remove-from-basket', function() {
 		var index = $(this).data('pick');
 
-		store.removeBasket(store.shoppingCart.products[index].name);
+		store.removeCart(store.shoppingCart.products[index].name);
 		refresh(store);
 	});
 });
 
 
 function refresh(store) {
-	updateInventory(store.allOfproducts)
-	updateBasket(store.shoppingCart)
+	updateList(store.allOfproducts)
+	updateCart(store.shoppingCart)
 };
 
 
-function updateInventory(products) {
+function updateList(products) {
 	$('#inventory-list').empty();
 
 	products.forEach(function(product, index) {
-		var item = buildString(product);
+		var item = createProduct(product);
 
 		if(product.inStock()) {
-			item += ("<div><a href='#' class='add-to-basket' data-pick='" + index + "'>Add to Basket</a></div>");
+			item += ("<div><a href='#' class='add-to-basket' data-pick='" + index + "'>Add to Cart</a></div>");
 		} else {
 			item += '<div>Out of stock</div>';
 		};
@@ -43,7 +43,7 @@ function updateInventory(products) {
 
 
 
-function buildString(product) {
+function createProduct(product) {
 	return '<li><div class="product-name">' + product.name + '</div>' +
 	'<div>Price: £<span class="product-price">' + product.price + '</span>, ' +
 	'Stock: <span class="product-quantity">' + product.quantity + '</span></div>' +
@@ -51,7 +51,7 @@ function buildString(product) {
 };
 
 
-function updateBasket(basket) {
+function updateCart(basket) {
 	$('#basket-list').empty();
 	$('#basket-count').text(basket.itemCount());
 	$('#basket-value').text(basket.totalPrice());

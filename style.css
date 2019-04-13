@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  	background-color: #00FFFF;
+  	background-color: black;
 }
 *, *:before, *:after {
   background-color: #FCDFFF;
@@ -10,6 +10,7 @@ html {
 ul {
 	list-style-type: none;
 	-webkit-padding-start: 0;
+
 }
 
 #product-section {
@@ -18,9 +19,9 @@ ul {
 
 .product-box {
 	padding: 5px;
-  	background-color: #00FFFF;
+  	background-color: black;
 }
 
 #basket {
-	background-color:#00FFFF;
+	background-color:#ccffff; 
 }
