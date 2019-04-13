@@ -4,6 +4,10 @@
 
 
 ```
+As a User,
+So that I can see the items in the shop,
+I can view the products and their category, price and availability information.
+
 As a user,
 So that I can buy an item of clothing,
 I can add a product to my shopping cart.

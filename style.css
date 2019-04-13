@@ -1,7 +1,9 @@
 html {
   box-sizing: border-box;
+  	background-color: black;
 }
 *, *:before, *:after {
+  background-color: pink;
   box-sizing: inherit;
 }
 
@@ -11,13 +13,14 @@ ul {
 }
 
 #product-section {
-
+  background-color: pink;
 }
 
 .product-box {
 	padding: 5px;
+  	background-color: black;
 }
 
 #basket {
-	background-color: pink;
+	background-color: black;
 }

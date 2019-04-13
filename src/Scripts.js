@@ -41,6 +41,8 @@ function updateInventory(products) {
 	});
 };
 
+
+
 function buildString(product) {
 	return '<li><div class="product-name">' + product.name + '</div>' +
 	'<div>Price: £<span class="product-price">' + product.price + '</span>, ' +
