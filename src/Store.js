@@ -46,6 +46,10 @@ class Store{
     }
   }
 
-
+  removeBasket(product)  {
+    var position = this.findIndex(product)
+    this.shoppingCart.removeProduct(this.allOfproducts[position])
+    this.allOfproducts[position].addProduct()
+}
 
 }

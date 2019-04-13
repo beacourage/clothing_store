@@ -30,18 +30,17 @@ describe("Store", () => {
   })
 
   it('Unable to put out of stock products in the basket', () => {
-  store.addBasket(store.allOfproducts[4]);
-  expect(store.shoppingCart.totalPrice()).toEqual(0);
-  expect(store.allOfproducts[4].quantity).toEqual(0);
-});
+  store.addBasket(store.allOfproducts[4])
+  expect(store.shoppingCart.totalPrice()).toEqual(0)
+  expect(store.allOfproducts[4].quantity).toEqual(0)
+  })
 
-// it('removes a product from the basket', function() {
-//   shop.addToBasket(product1);
-//   shop.addToBasket(product1);
-//   shop.removeFromBasket(product1.name);
-//   expect(shop.basket.totalValue()).toEqual(19);
-//   expect(shop.inventory[3].quantity).toEqual(5);
-// });
+  it("Removing product from  the basket increases its quantity", () => {
+  store.addBasket(store.allOfproducts[0])
+  store.addBasket(store.allOfproducts[0])
+  store.removeBasket(store.allOfproducts[0].name)
+  expect(store.allOfproducts[0].quantity).toEqual(4)
+  })
 
 
 })
