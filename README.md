@@ -1,5 +1,12 @@
 # Responsive Website for Clothing Retailer
 
+## Getting Started
+1. Clone this repository `git clone git@github.com:beacourage/clothing_store.git`
+2. Change into directory `cd clothing_store`
+4. Run the web app `open -a "Google Chrome" index.html`
+5. Run tests `open -a "Google Chrome" SpecRunner.html`
+
+
 ## User Stories
 
 
