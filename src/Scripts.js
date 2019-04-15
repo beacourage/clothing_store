@@ -2,6 +2,7 @@ $(document).ready(function() {
 
 	var store = new Store
 	refresh(store);
+}|
 
 	$('#inventory-list').on('click', 'a.add-to-basket', function() {
 		var position = $(this).data('pick');
@@ -17,7 +18,6 @@ $(document).ready(function() {
 		refresh(store);
 	});
 });
-
 
 function refresh(store) {
 	updateList(store.allOfproducts)
@@ -41,15 +41,12 @@ function updateList(products) {
 	});
 };
 
-
-
 function createProduct(product) {
 	return '<li><div class="product-name">' + product.name + '</div>' +
 	'<div>Price: £<span class="product-price">' + product.price + '</span>, ' +
 	'Stock: <span class="product-quantity">' + product.quantity + '</span></div>' +
 	'<div>Category: <span class="product-category">' + product.category + '</span></div>';
 };
-
 
 function updateCart(basket) {
 	$('#basket-list').empty();

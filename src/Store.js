@@ -20,7 +20,6 @@ class Store{
     									"Bird Print Dress, Black + Women’s Formalwear + £270.00 + 10",
     									 "Mid Twist Cut-Out Dress, Pink + Women’s Formalwear + £540.00 + 5"]
 
-
    productArray.forEach((product) => {
      product = product.split(" + ");
      array.push(new IndividualProduct(product[0], product[1], product[2],product[3]))
