@@ -16,7 +16,7 @@ This simple clothing website was built using Javascript, HTML and CSS. I was ini
 * TDD approach - 'Red Green Refactor' loop.
 * Bellow shows all the passing tests:
 
-<h1 align="center">![Screenshot](Screenshot_tests.png)</h1>
+[Screenshot](Screenshot_tests.png)
 
 ## Design
 
