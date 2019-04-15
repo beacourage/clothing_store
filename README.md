@@ -1,7 +1,6 @@
 <h1 align="center">Responsive Website for a Clothing Retailer</h1>
 
-This simple clothing website was built using Javascript and HTML/CSS. I was initially going to build it in Ruby on Rails, however, I decided that Javascript would be the most appropriate for the given task. Javascript is a programming language that I enjoy and would like to improve on, and I therefore took the decision to challenge myself.  
-Throughout this challenge, I followed a strict process for problem solving and debugging. I enjoyed breaking down the problem and harnessing the power of Google!
+This simple clothing website was built using Javascript, HTML and CSS. I was initially going to build it in Ruby on Rails, however, I decided that Javascript would be the most appropriate for the given task. I chose Javascript as it is a programming language that I enjoy and would like to improve on, and I therefore took the decision to challenge myself.  Throughout this challenge, I followed a strict process for problem solving and debugging. I enjoyed breaking down the problem and harnessing the power of Google!
 
 ## Getting Started
 
@@ -12,11 +11,9 @@ Throughout this challenge, I followed a strict process for problem solving and d
 
 ## Testing
 
-* A strict Test Driven Development process was used throughout
-* Program consists of 19 tests - all tests passing
-* Each test has a clear test description
-* Testing framework - Jasmine
-* TDD approach - 'Red Green Refactor' loop. This involves first writing a failing test, and then producing a minimum amount of code to pass that test.
+* A strict Test Driven Development process was used throughout. I followed a strict red, green, refactor cycle throughout this challenge - writing one test followed by a minimum amount of code to make it pass, and subsequently refactoring. My stringent TDD process is demonstrated through my commit history whereby  each commit reflects one cycle of the red green refactor cycle. Each passing test is accompanied by a commit who’s message is both clear and concise.
+* The testing framework used is Jasmine, and my program consists of 19 tests with all of the tests passing. Each test has a clear description and my code is thoroughly tested.  
+* TDD approach - 'Red Green Refactor' loop.
 
 ## Design
 
@@ -69,10 +66,13 @@ Tech | Description
 ------------- | -------------
 [Javascript](https://www.javascript.com/) | Main language used
 [Jasmine](https://jasmine.github.io) | Javascript testing framework
-[Bootstrap](http://getbootstrap.com) | Bootstrap
+[HTML5](https://www.w3schools.com/html/default.asp) | Hypertext Markup Language
+[CSS](https://www.w3schools.com/css/) | Cascading Style Sheets
+[Bootstrap](http://getbootstrap.com) | Bootstrap Framework, for basic front end
 [Trello](https://trello.com/) | Tracking and organising workflow
+[Google](https://www.google.co.uk/) | Internet-related services and products
 
 ## Contributors
 
-This app was built with contributions from
+This app was built with contributions from myself:
 * [Beatrice Courage](https://github.com/beacourage)
