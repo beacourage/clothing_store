@@ -27,7 +27,7 @@ This simple clothing website was built using Javascript, HTML and CSS. I was ini
 
 ## Prioritised User Stories
 
-The user stories formed part of the development test criteria. Six out of the eight user stories were completed, and given more time, I would have tackled the task of applying discount vouchers that can be redeemed. I would have created a new class called Voucher and included the logic within this class.
+The user stories formed part of the development test criteria.
 
 ```
 As a user,
@@ -47,12 +47,16 @@ So that I can see how much money,
 I can view the total price for the products in my shopping cart.
 
 As a user,
+So I know if an item is available,
+I can see the total quantity of each item.
+
+As a user,
 So that I can user my voucher,
 I can apply a voucher to my shopping cart.
 
 As a user,
 So that I can see the final price,
-I can view the total price for the products in my shopping cart  with discounts applied.
+I can view the total price for the products in my shopping cart with discounts applied.
 
 As a user,
 So that I know I'm using the correct voucher,
@@ -63,9 +67,22 @@ So that I only buy items that are in stock,
 I am unable to put Out of Stock products in the shopping cart.
 ```
 
-## Running the app from a users perspective
+## Instructions for User
 
-* A strict Test Driven Development process was used throughout. I followed a strict red, green, refactor cycle throughout this challenge - writing one test follo
+* Immediately after running the web app (open index.html), there will be a clothing website with an empty shopping cart:
+
+![Screenshot](Screenshot_website.png)
+
+* The product descriptions are in each of the boxes, and in order to add a product to the shopping cart, click the blue "Add to cart" link under the product description. Below shows three items added to the shopping cart. As shown, there is an option to remove each item from the shopping cart. Notice that adding an item to the shopping cart decreases its quantity and you are unable to add out of stock products to the cart. In addition, notice how the total price for products in the shopping cart is displayed at the bottom of the shopping cart.
+
+![Screenshot](Screenshot_website2.png)
+
+
+## Challenges and Improvements
+
+There were a couple of challenges associated with this test.
+* The first challenge was deciding which technology to use. I started in Ruby on Rails, however, I realised that I would not be able to fully showcase my coding as Ruby on Rails does many things for you ! I then started again in Javascript, and in order to not waste time, I should have spent more time planning which technologies to use and why I would use them.
+* Seven out of the nine user stories were completed, and I did not have time to apply discount vouchers that can be redeemed. I decided that in order for my website to feel 'complete', I would spend some time on the front end so that I could at least see a basic web application and it was not all back end. If I were to repeat this task, I would have focussed more heavily on the backend in order to complete  all of the user requirements. I would have created a new class called Voucher and included the logic for the specific discounts within this class. I would have then initialized a new instance of the Voucher class in the Cart class to then call Voucher methods on any new instances of the cart class.
 
 
 ## Technologies used
