@@ -21,7 +21,7 @@ describe("Store", () => {
   })
 
 
-  describe("Assing and removing products from cart:", () => {
+  describe("Adding and removing products from cart:", () => {
 
 	  it('Can add a product to the cart', () => {
   	  store.addCart(store.allOfproducts[0])

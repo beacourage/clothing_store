@@ -14,6 +14,9 @@ This simple clothing website was built using Javascript, HTML and CSS. I was ini
 * A strict Test Driven Development process was used throughout. I followed a strict red, green, refactor cycle throughout this challenge - writing one test followed by a minimum amount of code to make it pass, and subsequently refactoring. My stringent TDD process is demonstrated through my commit history whereby  each commit reflects one cycle of the red green refactor cycle. Each passing test is accompanied by a commit who’s message is both clear and concise.
 * The testing framework used is Jasmine, and my program consists of 19 tests with all of the tests passing. Each test has a clear description and my code is thoroughly tested.  
 * TDD approach - 'Red Green Refactor' loop.
+* Bellow shows all the passing tests:
+
+<h1 align="center">![Screenshot](Screenshot_tests.png)</h1>
 
 ## Design
 
@@ -60,7 +63,9 @@ So that I only buy items that are in stock,
 I am unable to put Out of Stock products in the shopping cart.
 ```
 
-## Running the app
+## Running the app from a users perspective
+
+* A strict Test Driven Development process was used throughout. I followed a strict red, green, refactor cycle throughout this challenge - writing one test follo
 
 
 ## Technologies used

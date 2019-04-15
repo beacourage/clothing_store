@@ -24,7 +24,7 @@ describe("Individual Product", () => {
 
   })
 
-  describe("Out or in stock:", () => {
+  describe("In or out of stock:", () => {
 
     it("Can tell whether a product is out of stock", () => {
       expect(product.outOfStock()).toBe(false)
