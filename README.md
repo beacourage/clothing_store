@@ -1,4 +1,4 @@
-# Beatrice Courage - Responsive Website for Clothing Retailer
+<h1 align="center">Responsive Website for Clothing Retailer</h1>
 
 This simple clothing website was built using Javascript and HTML/CSS. I was initially going to build it in Ruby on Rails, however, I decided that Javascript would be the most appropriate for the given task. Javascript is a programming language that I enjoy and would like to improve on, and I therefore took the decision to challenge myself.  
 Throughout this challenge, I followed a strict process for problem solving and debugging. I enjoyed breaking down the problem and harnessing the power of Google!
