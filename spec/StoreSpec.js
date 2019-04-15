@@ -18,7 +18,7 @@ describe("Store", () => {
   })
 
 
-	it('Can add a products to the basket', () => {
+	it('Can add a product to the basket', () => {
   	store.addCart(store.allOfproducts[0])
     store.addCart(store.allOfproducts[1])
   	expect(store.shoppingCart.totalPrice()).toEqual(141.00)

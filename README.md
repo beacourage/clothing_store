@@ -60,6 +60,9 @@ So that I only buy items that are in stock,
 I am unable to put Out of Stock products in the shopping cart.
 ```
 
+## Running the app
+
+
 ## Technologies used
 
 Tech | Description
