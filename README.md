@@ -20,9 +20,10 @@ Throughout this challenge, I followed a strict process for problem solving and d
 
 ## Design
 
-* Program consists of three separate classes that can be reasonably justified - Cart, IndividualProduct and Store.
-* All methods are fewer than 7 lines
-* All classes are fewer than 55 lines
+* My program consists of three separate classes that can be reasonably justified - Cart, IndividualProduct and Store. I have followed the Single Responsibility Principle whereby each class does more or less one thing. By initializing a new instance of the Cart class in my Store class, I was able to call Cart methods on any new instances of the store class.
+* I ensured that none of my classes were coupled to their dependencies and in each class, the dependencies are passed in as arguments to the constructor. Having dependency injections allows my code to be reusable or tested independently, the code works totally by itself.
+* In order to keep my code as clean and DRY as possible, I ensured that all methods where fewer than seven lines and all classes were fewer than fifty five lines.
+
 
 ## Prioritised User Stories
 
