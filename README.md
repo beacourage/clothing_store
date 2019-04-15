@@ -93,7 +93,7 @@ Tech | Description
 [Jasmine](https://jasmine.github.io) | Javascript testing framework
 [HTML5](https://www.w3schools.com/html/default.asp) | Hypertext Markup Language
 [CSS](https://www.w3schools.com/css/) | Cascading Style Sheets
-[jQuery]([CSS](https://www.w3schools.com/css/) | Javascript library
+[jQuery](https://www.w3schools.com/css/) | Javascript library
 [Bootstrap](http://getbootstrap.com) | Bootstrap Framework, for basic front end
 [Trello](https://trello.com/) | Tracking and organising workflow
 [Google](https://www.google.co.uk/) | Internet-related services and products
