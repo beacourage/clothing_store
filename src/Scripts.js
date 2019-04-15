@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 	var store = new Store
 	refresh(store);
-}|
+
 
 	$('#inventory-list').on('click', 'a.add-to-basket', function() {
 		var position = $(this).data('pick');
