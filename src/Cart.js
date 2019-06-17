@@ -22,5 +22,6 @@ class Cart {
     return this.products.length
   }
 
+// Making sure i am connected to git 
 
 }
